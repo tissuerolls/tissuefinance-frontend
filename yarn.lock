@@ -1828,7 +1828,7 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
 
-"@pancakeswap-libs/uikit@goosedefi/goose-uikit":
+"@tissueswap/uikit@goosedefi/goose-uikit":
   version "0.10.2"
   resolved "https://codeload.github.com/goosedefi/goose-uikit/tar.gz/068e017bb0f927c566a43596fb555a5818e13154"
   dependencies:
@@ -2162,6 +2162,17 @@
   integrity sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==
   dependencies:
     defer-to-connect "^1.0.1"
+
+"@tissueswap/uikit@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@tissueswap/uikit/-/uikit-1.0.1.tgz#025fc3aaa7c64cd7b13ae2a2054a2b17258812dd"
+  integrity sha512-/KUDPhtX8CLPHTsxnXP5WqmuyAhp2KYxrzPB5CvOZ07y5+h4HBOEnEsFTl3qJQMC2KXCqXshqMIvAETx2RtdRg==
+  dependencies:
+    "@types/lodash" "^4.14.162"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
 
 "@toruslabs/eccrypto@^1.1.5":
   version "1.1.5"
