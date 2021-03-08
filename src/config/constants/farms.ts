@@ -5,14 +5,14 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 5,
-    lpSymbol: 'ROLL-BUSD LP',
+    lpSymbol: 'ROLL-ROLL LP',
     lpAddresses: {
-      97: '0xD1Ddf2dC2E1fe71cB52986B318C62156BAB6c7b8',
+      97: '0xbc26675BacE371Dd09aA49E1374213924e2D83A9',
       56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
     },
     tokenSymbol: 'EGG',
     tokenAddresses: {
-      97: '0xD1Ddf2dC2E1fe71cB52986B318C62156BAB6c7b8',
+      97: '0xbc26675BacE371Dd09aA49E1374213924e2D83A9',
       56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
