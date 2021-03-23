@@ -45,23 +45,28 @@ const CakeStats = () => {
         </Heading>
         <Row>
           <Text fontSize="14px">{TranslateString(10005, 'Market Cap')}</Text>
-          <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
+          {/* <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" /> */}
+          <CardValue fontSize="14px" value={0} decimals={0} prefix="$" />
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(536, 'Total Minted')}</Text>
-          {totalSupply && <CardValue fontSize="14px" value={getBalanceNumber(totalSupply)} decimals={0} />}
+          {/* {totalSupply && <CardValue fontSize="14px" value={getBalanceNumber(totalSupply)} decimals={0} />} */}
+          {totalSupply && <CardValue fontSize="14px" value={65000} decimals={0} />}
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(538, 'Total Burned')}</Text>
-          <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} decimals={0} />
+          {/* <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} decimals={0} /> */}
+          <CardValue fontSize="14px" value={0} decimals={0} />
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(10004, 'Circulating Supply')}</Text>
-          {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />}
+          {/* {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />} */}
+          {cakeSupply && <CardValue fontSize="14px" value={65000} decimals={0} />}
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New TISSUE/block')}</Text>
-          <Text bold fontSize="14px">{rollPerBlock}</Text>
+          {/* <Text bold fontSize="14px">{rollPerBlock}</Text> */}
+          <Text bold fontSize="14px">{1}</Text>
         </Row>
       </CardBody>
     </StyledCakeStats>

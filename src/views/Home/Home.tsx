@@ -25,6 +25,7 @@ const Hero = styled.div`
   ${({ theme }) => theme.mediaQueries.lg} {
     background-image: url('/images/egg/3.png'), url('/images/egg/3b.png');
     background-position: left center, right center;
+    background-size: 10em 10em, 15em 15em;
     height: 165px;
     padding-top: 0;
   }
@@ -62,7 +63,7 @@ const Home: React.FC = () => {
         <Heading as="h1" size="xl" mb="24px" color="secondary">
           {TranslateString(576, 'Tissue Finance')}
         </Heading>
-        <Text>{TranslateString(578, 'Top 3 best DEFI app on Binance Smart Chain.')}</Text>
+        <Text>{TranslateString(578, 'Got an issue? Get a tissue!')}</Text>
       </Hero>
       <div>
         <Cards>

@@ -35,6 +35,8 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
   const lpName = farm.lpSymbol.toUpperCase()
   const isApproved = account && allowance && allowance.isGreaterThan(0)
 
+  const isDisabled = true; // Temporary disables the stake button
+
   const lpContract = useMemo(() => {
     if(isTokenOnly){
       return getContract(ethereum as provider, tokenAddress);
@@ -56,9 +58,9 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
 
   const renderApprovalOrStakeButton = () => {
     return isApproved ? (
-      <StakeAction stakedBalance={stakedBalance} tokenBalance={tokenBalance} tokenName={lpName} pid={pid} depositFeeBP={depositFeeBP} />
+      <StakeAction stakedBalance={stakedBalance}  tokenBalance={tokenBalance} tokenName={lpName} pid={pid} depositFeeBP={depositFeeBP} />
     ) : (
-      <Button mt="8px" fullWidth disabled={requestedApproval} onClick={handleApprove}>
+      <Button mt="8px" fullWidth disabled={isDisabled} onClick={handleApprove}>
         {TranslateString(999, 'Approve Contract')}
       </Button>
     )
